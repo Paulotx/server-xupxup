@@ -34,6 +34,21 @@ export default class CreateItems1615226794368 implements MigrationInterface {
                         type: 'varchar',
                         isNullable: false,
                     },
+                    {
+                        name: 'watermelon_id',
+                        type: 'varchar',
+                        isNullable: false,
+                    },
+                    {
+                        name: 'created_at',
+                        type: 'timestamp with time zone',
+                        default: 'now()',
+                    },
+                    {
+                        name: 'updated_at',
+                        type: 'timestamp with time zone',
+                        default: 'now()',
+                    },
                 ],
             }),
         );
